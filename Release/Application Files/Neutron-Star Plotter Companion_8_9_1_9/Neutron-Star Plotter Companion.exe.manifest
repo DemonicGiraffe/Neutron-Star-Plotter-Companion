@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Neutron-Star Plotter Companion.exe" version="8.9.1.9" publicKeyToken="41d819a778a24fe0" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="elite_dangerous_logo_76d3a02897_seeklogo_com_IUY_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Neutron-Star Plotter Companion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Neutron-Star Plotter Companion.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.mshtml.dll" size="8032648">
+      <assemblyIdentity name="Microsoft.mshtml" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tgMNMgyI1wYExBjyAq/P48KMM1se7A/lMwnx1Y9gxT4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Neutron-Star Plotter Companion.exe" size="205752">
+      <assemblyIdentity name="Neutron-Star Plotter Companion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wBAMs2HI+4EX/JJvUyUkACPOMSntKIj5FFBHdPEOKj8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Spire.Common.dll" size="88160">
+      <assemblyIdentity name="Spire.Common" version="10.3.8.0" publicKeyToken="663F351905198CB3" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vfyyTnQ9c/J+GTXAY9kst1jiGeJPc5cTy7hCIj0pXaM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Spire.License.dll" size="98816">
+      <assemblyIdentity name="Spire.License" version="1.3.8.46" publicKeyToken="B1144360237C8B3F" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>A5oXRJv9CVWPY/fCLLNMuMjihbb1n1fwEyd8gzFyP8Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Spire.Pdf.dll" size="14567008">
+      <assemblyIdentity name="Spire.Pdf" version="6.3.11.0" publicKeyToken="663F351905198CB3" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qxS8rrJVc9VgK2u5By1aoMNumOTgYTaoND6+Oifz5jg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Spire.XLS.dll" size="12101216">
+      <assemblyIdentity name="Spire.XLS" version="10.3.8.0" publicKeyToken="663F351905198CB3" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>i245vY64TAXxx27zs9tvQDyMeUemeK96qDn8hzvzjB4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="elite_dangerous_logo_76d3a02897_seeklogo_com_IUY_icon.ico" size="42253">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xRMYOINGY3poxrr0GQyZmNakswN7xvMPBaTrDkHc0EE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Neutron-Star Plotter Companion.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=VULCANIS\thebl" issuerKeyHash="0922b5947fcb7cc9294279403b2604b57b919470" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>wht9ZOv/LcixO3Ciy8AbpLVq/C1EGLISRZ5bV6SKVlw=</DigestValue></Reference></SignedInfo><SignatureValue>ERVTQMc2aKht/QPHvLE8mnp2EAZa02ZRxvZOw0NptdIFmoLSTKMMpr1RauKbC2UQ1qXRGgN1g3NoLY8J5gtTiPvKYMCxNOZz9N25i+l5cP8NrItfldwQrA8ADdsFX8UBmPNJGGA7kmN3ZNYG8oc16tcLNmk6d/Anh8PukrK6GMs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>4DAnFLlZBfuBSf9BUk5C651pF9A6XauFM4Cn4Jz0dvsx6+ctaP+qxc0mr9hMco+RMYK+pyQgfGi10Jkew/uNpjN24K4YIy3bGLqzJPM1x9XrC8kStQitvwicnpBGjv6f5VAQwC9a7ar5tGd465G5eW0GX1b8aZ+l73hezxYsvmE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5c568aa4575b9e4512b218442dfc6ab5a41bc0cba2703bb1c82dffeb647d1bc2" Description="" Url=""><as:assemblyIdentity name="Neutron-Star Plotter Companion.exe" version="8.9.1.9" publicKeyToken="41d819a778a24fe0" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=VULCANIS\thebl</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>fwWCHN9/V4S9bHbkm8dC22zyjH4ipM+4J0MeDFE1OE0=</DigestValue></Reference></SignedInfo><SignatureValue>vTVdut65v4RWBBuWWNxwxdUo7f5aZpuaJgdOpMq/VOv0vGcoDx6CPTvWZmwPr2GeKDKd3RMIA5dOCRTGn9wFzSlGGZAwy7/eTD+RjSNHztdlWuawJscSwdU4yr2SsICmVe3GVZ5Jzb0wHOx3C0I6ryM73n6Lw+OWBzXoSTaSajs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>4DAnFLlZBfuBSf9BUk5C651pF9A6XauFM4Cn4Jz0dvsx6+ctaP+qxc0mr9hMco+RMYK+pyQgfGi10Jkew/uNpjN24K4YIy3bGLqzJPM1x9XrC8kStQitvwicnpBGjv6f5VAQwC9a7ar5tGd465G5eW0GX1b8aZ+l73hezxYsvmE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQTl28ZqD4BaNPXbIJrD1VOTANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwAVgBVAEwAQwBBAE4ASQBTAFwAdABoAGUAYgBsMB4XDTIwMDQxOTIxNDQ0N1oXDTIxMDQyMDAzNDQ0N1owJzElMCMGA1UEAx4cAFYAVQBMAEMAQQBOAEkAUwBcAHQAaABlAGIAbDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA4DAnFLlZBfuBSf9BUk5C651pF9A6XauFM4Cn4Jz0dvsx6+ctaP+qxc0mr9hMco+RMYK+pyQgfGi10Jkew/uNpjN24K4YIy3bGLqzJPM1x9XrC8kStQitvwicnpBGjv6f5VAQwC9a7ar5tGd465G5eW0GX1b8aZ+l73hezxYsvmECAwEAATANBgkqhkiG9w0BAQsFAAOBgQAArReQH/Kibp44T3NujrOYzvShNqdocPGA0Pk19C2Jwa7Dw2QRotk1jR6LxzV6p6crUmaa4FAJ0eOSTJ866ihg1GJvJ8SF8xhFI2X0Clj+Cinvh1GIygZj1t491xgUShziYs2tpi/bdDQSAJJmLrR2ZWs7j/tNVBgu7aSgYjzIpg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
