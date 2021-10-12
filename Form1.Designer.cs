@@ -229,7 +229,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(195, 13);
             this.label3.TabIndex = 15;
-            this.label3.Text = "Developed by TheDemonicGiraffe 2020";
+            this.label3.Text = "Developed by TheDemonicGiraffe 2021";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBox2
