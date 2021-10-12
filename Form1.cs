@@ -161,10 +161,11 @@ namespace NeutronStarPlotterCompanion
                     textBox1.Text = "End of File";
                 }
                 //automatically copies the Cell data to the users clipboard
-                string value = dataGridView1.CurrentCell.Value.ToString();
                 int rownum = dataGridView1.CurrentCell.RowIndex;
                 Jumps.Text = dataGridView1.Rows[rownum].Cells["Jumps Left"].Value.ToString();
-                System.Windows.Forms.Clipboard.SetText(value);
+                string OGvalue = dataGridView1.CurrentCell.Value.ToString();
+                string editedvalue = OGvalue.Remove(OGvalue.Length - 1, 1);
+                System.Windows.Forms.Clipboard.SetText(editedvalue);
             }
             catch
             {
@@ -223,10 +224,11 @@ namespace NeutronStarPlotterCompanion
                     textBox1.Text = "Beginning of file";
                 }
                 //automatically copies the Cell data to the users clipboard
-                string value = dataGridView1.CurrentCell.Value.ToString();
+                string OGvalue = dataGridView1.CurrentCell.Value.ToString();
+                string editedvalue = OGvalue.Remove(OGvalue.Length - 1, 1);
+                System.Windows.Forms.Clipboard.SetText(editedvalue);
                 int rownum = dataGridView1.CurrentCell.RowIndex;
                 Jumps.Text = dataGridView1.Rows[rownum].Cells["Jumps Left"].Value.ToString();
-                System.Windows.Forms.Clipboard.SetText(value);
 
                 progressBar1.Value = rownum;
             }
