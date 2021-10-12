@@ -49,20 +49,22 @@ namespace NeutronStarPlotterCompanion
                 column.Width = 150;
 
                 //calculates the sum of total jumps
-                int sum = 0;
-                for (int x = 0; x < dataGridView1.Rows.Count; x++)
-                {
-                    sum += Convert.ToInt32(dataGridView1.Rows[x].Cells["Jumps"].Value);
-                }
-                Jumps.Text = sum.ToString();
+                //int sum = 0;
+                //for (int x = 0; x < dataGridView1.Rows.Count; x++)
+                //{
+                //    sum += Convert.ToInt32(dataGridView1.Rows[x].Cells["Jumps Left"].Value);
+                //}
+                
 
                 //setting the groundwork for the realtime jump caluclation as well as setting up the progress bar
                 int rownumberammount = dataGridView1.RowCount;
+                int rownum = dataGridView1.CurrentCell.RowIndex;
+                Jumps.Text = dataGridView1.Rows[rownum].Cells["Jumps Left"].Value.ToString();
                 progressBar1.Maximum = rownumberammount;
                 textBox1.Text = "File opened Successfully!";
                 //updates start point and endpoint title
                 string cell = dataGridView1.Rows[0].Cells["System Name"].Value.ToString();
-                string cell2 = dataGridView1.Rows[rownumberammount-1].Cells["System Name"].Value.ToString();
+                string cell2 = dataGridView1.Rows[rownumberammount - 1].Cells["System Name"].Value.ToString();
                 textBox2.Text = "You are traveling from " + cell + " to " + cell2;
 
             }
@@ -91,32 +93,38 @@ namespace NeutronStarPlotterCompanion
 
                 //variables for the remaining jumps calculation
                 int rownum = dataGridView1.CurrentCell.RowIndex;
-                string input = Jumps.Text;
-                int result = Int32.Parse(input);
-                if (result >= 3)
-                {
-                    //updating with the updated calculation as well as a check to make sure it's not mis-aligned
-                    string input2 = dataGridView1.Rows[rownum].Cells["Jumps"].Value.ToString();
-                    int result2 = Int32.Parse(input2);
-                    int updatedjumps = (result - result2);
-                    Console.WriteLine(updatedjumps);
-                    if(updatedjumps >= 1) { 
-                    Jumps.Text = updatedjumps.ToString();}
-                    progressBar1.Value = rownum;
+                //string input = Jumps.Text;
+                //int result = Int32.Parse(input);
 
-                }
-                else
-                {
-                    //if it fails the mis-alignment check it does the following. this usually takes place if the final jump amount is greater than 0
-                    int rownum1 = dataGridView1.CurrentCell.RowIndex;
-                    string input1 = Jumps.Text;
-                    int result1 = Int32.Parse(input);
-                    string input2 = dataGridView1.Rows[rownum].Cells["Jumps"].Value.ToString();
-                    int result2 = Int32.Parse(input2);
-                    int updatedjumps = (result - result2);
-                    Jumps.Text = result2.ToString();
-                    progressBar1.Value = (rownum +1);
-                }
+                progressBar1.Value = rownum;
+                //dataGridView1.Rows[rownum].Cells["Jumps Left"].Value.ToString();
+
+                //if (result >= 3)
+                //{
+                //    //updating with the updated calculation as well as a check to make sure it's not mis-aligned
+                //    //string input2 = dataGridView1.Rows[rownum].Cells["Jumps Left"].Value.ToString();
+                //    //int result2 = Int32.Parse(input2);
+                //    //int updatedjumps = (result - result2);
+                //    //Console.WriteLine(updatedjumps);
+                //    //if (updatedjumps >= 1)
+                //    //{
+                //      //  Jumps.Text = updatedjumps.ToString();
+                //    //}
+
+
+                //}
+                //else
+                //{
+                //    //if it fails the mis-alignment check it does the following. this usually takes place if the final jump amount is greater than 0
+                //    int rownum1 = dataGridView1.CurrentCell.RowIndex;
+                //    string input1 = Jumps.Text;
+                //    int result1 = Int32.Parse(input);
+                //    string input2 = dataGridView1.Rows[rownum].Cells["Jumps Left"].Value.ToString();
+                //    int result2 = Int32.Parse(input2);
+                //    int updatedjumps = (result - result2);
+                //    Jumps.Text = result2.ToString();
+                //    progressBar1.Value = (rownum + 1);
+                //}
             }
 
 
@@ -141,7 +149,7 @@ namespace NeutronStarPlotterCompanion
                 }
 
                 if (row == dataGridView1.RowCount)
-                    
+
                     textBox1.Text = "File Error";
                 try
                 {
@@ -154,11 +162,14 @@ namespace NeutronStarPlotterCompanion
                 }
                 //automatically copies the Cell data to the users clipboard
                 string value = dataGridView1.CurrentCell.Value.ToString();
+                int rownum = dataGridView1.CurrentCell.RowIndex;
+                Jumps.Text = dataGridView1.Rows[rownum].Cells["Jumps Left"].Value.ToString();
                 System.Windows.Forms.Clipboard.SetText(value);
-            } catch
+            }
+            catch
             {
                 //if the button is pressed without a file loaded
-                MessageBox.Show("Please Select a File","Error");
+                MessageBox.Show("Please Select a File", "Error");
             }
         }
 
@@ -172,14 +183,14 @@ namespace NeutronStarPlotterCompanion
                 textBox1.Text = percent + "% Traveled";
 
                 //variables for the remaining jumps calculation
-                int rownum = dataGridView1.CurrentCell.RowIndex -1;
-                string input = Jumps.Text;
-                int result = Int32.Parse(input);
-                //updating with the updated calculation
-                string input2 = dataGridView1.Rows[rownum].Cells["Jumps"].Value.ToString();
-                int result2 = Int32.Parse(input2);
-                int updatedjumps = (result2 + result);
-                Jumps.Text = updatedjumps.ToString();
+                int rownum = dataGridView1.CurrentCell.RowIndex - 1;
+                //string input = Jumps.Text;
+                //int result = Int32.Parse(input);
+                ////updating with the updated calculation
+                //string input2 = dataGridView1.Rows[rownum].Cells["Jumps Left"].Value.ToString();
+                //int result2 = Int32.Parse(input2);
+                //int updatedjumps = (result2 + result);
+                //Jumps.Text = updatedjumps.ToString();
             }
             //if the user clicked "prev" at the top of the file
             catch { textBox1.Text = "wrong way buddy!"; }
@@ -208,19 +219,21 @@ namespace NeutronStarPlotterCompanion
                 }
                 catch
                 {
-                        //when the top of the file is reached
+                    //when the top of the file is reached
                     textBox1.Text = "Beginning of file";
                 }
                 //automatically copies the Cell data to the users clipboard
                 string value = dataGridView1.CurrentCell.Value.ToString();
                 int rownum = dataGridView1.CurrentCell.RowIndex;
+                Jumps.Text = dataGridView1.Rows[rownum].Cells["Jumps Left"].Value.ToString();
                 System.Windows.Forms.Clipboard.SetText(value);
+
                 progressBar1.Value = rownum;
             }
             catch
             {
                 //if the "prev" button was pressed without a file loaded
-                MessageBox.Show("Please Select a File","Error");
+                MessageBox.Show("Please Select a File", "Error");
             }
         }
         public int a = 1;
@@ -268,7 +281,7 @@ namespace NeutronStarPlotterCompanion
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://spansh.co.uk/plotter");
+            System.Diagnostics.Process.Start("https://www.spansh.co.uk/exact-plotter/");
         }
 
         private void Jumps_Click(object sender, EventArgs e)
@@ -294,6 +307,22 @@ namespace NeutronStarPlotterCompanion
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TestButton_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.Show();
         }
     }
 }
