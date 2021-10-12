@@ -2,9 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PublishUrlHistory>D:\Users\TheDemonicGiraffe\Documents\GitHub\Neutron-Star-Plotter-Companion\Release\|C:\Users\thebl\Desktop\app\</PublishUrlHistory>
-    <InstallUrlHistory />
+    <InstallUrlHistory>https://raw.githubusercontent.com/DemonicGiraffe/Neutron-Star-Plotter-Companion/master/Release/</InstallUrlHistory>
     <SupportUrlHistory />
-    <UpdateUrlHistory>https://github.com/DemonicGiraffe/Neutron-Star-Plotter-Companion/blob/master/Release%3fraw=true/|https://github.com/DemonicGiraffe/Neutron-Star-Plotter-Companion/blob/master/Release/setup.exe%3fraw=true/|https://github.com/DemonicGiraffe/Neutron-Star-Plotter-Companion/tree/master/Release/|https://github.com/DemonicGiraffe/Neutron-Star-Plotter-Companion.git/</UpdateUrlHistory>
+    <UpdateUrlHistory>https://raw.githubusercontent.com/DemonicGiraffe/Neutron-Star-Plotter-Companion/master/Release/|https://github.com/DemonicGiraffe/Neutron-Star-Plotter-Companion/blob/master/Release%3fraw=true/|https://github.com/DemonicGiraffe/Neutron-Star-Plotter-Companion/blob/master/Release/setup.exe%3fraw=true/|https://github.com/DemonicGiraffe/Neutron-Star-Plotter-Companion/tree/master/Release/|https://github.com/DemonicGiraffe/Neutron-Star-Plotter-Companion.git/</UpdateUrlHistory>
     <BootstrapperUrlHistory />
     <ErrorReportUrlHistory />
     <FallbackCulture>en-US</FallbackCulture>
