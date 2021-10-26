@@ -358,11 +358,11 @@ namespace NeutronStarPlotterCompanion
                 int rownum = dataGridView1.CurrentCell.RowIndex;
                 try
                 {
-                    if (dataGridView1.Rows[rownum + 1].Cells["Refuel"].Value.ToString() == "Yes")
+                    if (dataGridView1.Rows[rownum - 1].Cells["Refuel"].Value.ToString() == "Yes")
                     {
                         RFWarn.Visible = true;
                     }
-                    if (dataGridView1.Rows[rownum + 1].Cells["Refuel"].Value.ToString() == "No")
+                    if (dataGridView1.Rows[rownum - 1].Cells["Refuel"].Value.ToString() == "No")
                     {
                         RFWarn.Visible = false;
                     }
