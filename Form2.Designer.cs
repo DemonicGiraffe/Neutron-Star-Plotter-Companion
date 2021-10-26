@@ -35,6 +35,7 @@ namespace NeutronStarPlotterCompanion
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -74,20 +75,30 @@ namespace NeutronStarPlotterCompanion
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(7, 84);
+            this.textBox1.Location = new System.Drawing.Point(12, 41);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(248, 86);
+            this.textBox1.Size = new System.Drawing.Size(191, 47);
             this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "Coming in the next update.\r\nIm just to tired and lazy to figure it our right now\r" +
-    "\n";
+            this.textBox1.Text = "Coming in the next update.\r\nI\'m just to tired and lazy to figure it out right now" +
+    "\r\n";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 119);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(263, 209);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -108,5 +119,6 @@ namespace NeutronStarPlotterCompanion
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

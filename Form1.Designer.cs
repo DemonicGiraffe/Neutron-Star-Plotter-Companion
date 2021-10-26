@@ -46,11 +46,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.TestButton = new System.Windows.Forms.Button();
             this.Discord = new System.Windows.Forms.Button();
             this.Twitter = new System.Windows.Forms.Button();
             this.Youtube = new System.Windows.Forms.Button();
             this.Twitch = new System.Windows.Forms.Button();
+            this.RFWarn = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -166,8 +166,9 @@
             this.Jumps.ForeColor = System.Drawing.Color.Silver;
             this.Jumps.Location = new System.Drawing.Point(443, 15);
             this.Jumps.Name = "Jumps";
-            this.Jumps.Size = new System.Drawing.Size(0, 20);
+            this.Jumps.Size = new System.Drawing.Size(19, 20);
             this.Jumps.TabIndex = 10;
+            this.Jumps.Text = "0";
             this.Jumps.Click += new System.EventHandler(this.Jumps_Click);
             // 
             // label1
@@ -175,7 +176,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(338, 20);
+            this.label1.Location = new System.Drawing.Point(336, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 13);
             this.label1.TabIndex = 11;
@@ -263,17 +264,6 @@
             this.panel2.TabIndex = 18;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // TestButton
-            // 
-            this.TestButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.TestButton.Location = new System.Drawing.Point(596, 12);
-            this.TestButton.Name = "TestButton";
-            this.TestButton.Size = new System.Drawing.Size(75, 23);
-            this.TestButton.TabIndex = 19;
-            this.TestButton.Text = "Settings";
-            this.TestButton.UseVisualStyleBackColor = true;
-            this.TestButton.Click += new System.EventHandler(this.TestButton_Click);
-            // 
             // Discord
             // 
             this.Discord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -326,13 +316,26 @@
             this.Twitch.UseVisualStyleBackColor = true;
             this.Twitch.Click += new System.EventHandler(this.Twitch_Click);
             // 
+            // RFWarn
+            // 
+            this.RFWarn.AutoSize = true;
+            this.RFWarn.BackColor = System.Drawing.Color.Transparent;
+            this.RFWarn.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RFWarn.ForeColor = System.Drawing.Color.DarkRed;
+            this.RFWarn.Location = new System.Drawing.Point(43, 98);
+            this.RFWarn.Name = "RFWarn";
+            this.RFWarn.Size = new System.Drawing.Size(607, 91);
+            this.RFWarn.TabIndex = 19;
+            this.RFWarn.Text = "Refuel Warning!";
+            this.RFWarn.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(684, 311);
-            this.Controls.Add(this.TestButton);
+            this.Controls.Add(this.RFWarn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
@@ -374,7 +377,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button TestButton;
+        private System.Windows.Forms.Label RFWarn;
     }
 }
 
